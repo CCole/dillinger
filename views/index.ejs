@@ -62,12 +62,16 @@
       <%- include overlay %>
       <%- include title %>
       <!--SplitJS-->
-      <div  class="g mnone" >
+      <div id="parent" class="g mnone" ng-controller="diSplitJsCtrl"  >
                                                                                                        
         <!--<%- include test %>-->
-        <%- include editor-headers %>
-        <%- include editor %>
-        <%- include preview %>
+        
+        <!--<%- include editor-headers %>-->
+       
+     <div class="g mnone" id="testing_split" "> 
+            <%- include editor %>
+            <%- include preview %>
+         </div>
       </div>
     </div>
   </div>
