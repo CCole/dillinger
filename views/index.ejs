@@ -42,6 +42,7 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href="/css/app.css" rel="stylesheet">
+  <link href="/css/app.css" rel="stylesheet">
 
 
 
@@ -62,16 +63,17 @@
       <%- include overlay %>
       <%- include title %>
       <!--SplitJS-->
-      <div id="parent" class="g mnone" ng-controller="diSplitJsCtrl"  >
+      <div id="parent" class="g mnone" ng-controller="diSplitJsCtrl" style="height: 100%;">
                                                                                                        
         <!--<%- include test %>-->
         
         <!--<%- include editor-headers %>-->
        
-     <div class="g mnone" id="testing_split" "> 
+        
             <%- include editor %>
             <%- include preview %>
-         </div>
+        
+        
       </div>
     </div>
   </div>
