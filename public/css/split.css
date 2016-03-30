@@ -15,3 +15,10 @@
   cursor: ns-resize;
   border: solid red;
 }
+
+#parent {
+    overflow: auto;
+    height: 100%;
+
+}
+

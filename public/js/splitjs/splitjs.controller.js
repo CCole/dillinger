@@ -34,8 +34,8 @@ module.exports =
       
     Split(['#editor1', '#preview1'],{
           direction: "horizontal", 
-         sizes: [50,50],
-          minSize: 200 
+          sizes: [50,50],
+          minSize: 300
       }); 
      
   });
