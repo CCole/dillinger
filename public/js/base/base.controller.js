@@ -32,7 +32,8 @@ module.exports =
   $rootScope.editor.getSession().setValue($rootScope.currentDocument.body);
   $rootScope.editor.setOption('minLines', 50);
   $rootScope.editor.setOption('maxLines', 90000);
-
+  //Add the textArea extension here? 
+  
   updateDocument = function() {
     $rootScope.currentDocument = documentsService.getCurrentDocument();
     return $rootScope.editor.getSession().setValue($rootScope.currentDocument.body);

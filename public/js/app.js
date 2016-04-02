@@ -67,6 +67,7 @@
 
   // Configure Dependencies
   angular.module('Dillinger', [
+    
     'diBase',
     'diDocuments',
     'diNotify',
