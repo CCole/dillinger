@@ -6,7 +6,10 @@
   var angular;
 
   // jQuery
-  window.jQuery = require('jquery');
+  window.jQuery = require('jquery'),
+  require('jquery-ui'),
+  require('jquery.easing');
+  debugger;
 
   // AngularJS
   angular = require('exports?angular!angular');
@@ -89,7 +92,13 @@
       opacity: 0
     }, 400, function() {
       return jQuery('.splashscreen').remove();
+      
+    }, function() {
+        console.log("inside resizer")
+   return jQuery( "#editor" ).resizable();
+    
     });
+    debugger; 
   });
-
+   
 })(window, document);
