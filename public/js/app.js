@@ -7,8 +7,8 @@
 
   // jQuery
   window.jQuery = require('jquery'),
-  require('jquery-ui'),
-  require('jquery.easing');
+  require('jquery-ui-bundle');
+  
   debugger;
 
   // AngularJS
@@ -91,14 +91,17 @@
     return jQuery('.splashscreen').animate({
       opacity: 0
     }, 400, function() {
-      return jQuery('.splashscreen').remove();
-      
-    }, function() {
+      return jQuery('.splashscreen').remove();  
+     });
+     
+     
+  }/*,function re () {
         console.log("inside resizer")
-   return jQuery( "#editor" ).resizable();
+   jQuery( "#editor" ).resizable();
     
-    });
-    debugger; 
-  });
-   
+    }*/
+  
+  );
 })(window, document);
+
+
