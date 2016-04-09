@@ -91,17 +91,21 @@
     return jQuery('.splashscreen').animate({
       opacity: 0
     }, 400, function() {
-      return jQuery('.splashscreen').remove();  
+      
+      return  jQuery('.splashscreen').remove(),
+     console.log(jQuery("#editor1").resizable());
+     
      });
      
      
-  }/*,function re () {
+  }/*function () {
         console.log("inside resizer")
-   jQuery( "#editor" ).resizable();
+   return jQuery("#editor").resizable();
     
     }*/
   
   );
+  
 })(window, document);
 
 
