@@ -93,7 +93,7 @@
     }, 400, function() {
       
       return  jQuery('.splashscreen').remove(),
-     console.log(jQuery("#editor1").resizable());
+     console.log(jQuery("#editor1").resizable({alsoResize:'#preview1'}));
      
      });
      
