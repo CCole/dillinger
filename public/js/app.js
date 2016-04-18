@@ -93,7 +93,34 @@
     }, 400, function() {
       
       return  jQuery('.splashscreen').remove(),
-     console.log(jQuery("#editor1").resizable({alsoResize:'#preview1'}));
+     jQuery("#editor1").resizable({
+        
+        resize: function(event, ui){
+            var preview = jQuery("#preview1");
+            var pWidth = preview.width(); 
+            var eWidth = ui.size.width;
+            var diff = pWidth - eWidth; 
+            //var width = ui.originalSize.width; 
+            //var width = editor.originalSize.width; 
+            console.log(pWidth);
+           // console.log(typeof preview.width()); 
+           // var diff = (width - editor); 
+           // preview.width(diff.toString()); 
+           
+           if (diff <= 0){
+             preview.width(pWidth - Math.abs(diff)); 
+             diff = 0; 
+           } else {
+               preview.width(pWidth + diff); 
+               diff = 0; 
+           }
+            
+        }
+         //alsoResize:'#preview1'
+         
+        
+
+        });
      
      });
      
