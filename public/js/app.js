@@ -99,9 +99,9 @@
             var preview = jQuery("#preview1");
            // var pWidth = preview.width(); 
             var diff = (ui.originalSize.width - ui.size.width);
-            console.log(ui.originalSize.width); 
-           console.log(diff); 
-           console.log(preview.width()); 
+            console.log("original size " + ui.originalSize.width); 
+           console.log("diff " + diff); 
+           console.log("preview width " + preview.width()); 
            if (diff <= 0){
              preview.width( preview.width() - Math.abs(diff) ); 
              
