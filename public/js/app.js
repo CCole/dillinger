@@ -98,7 +98,9 @@
          
     
        alsoResizeReverse: "#preview1, #previewHead",
-       alsoResize: "#editorHead"
+       alsoResize: "#editorHead",
+       maxWidth: 1300,
+       minWidth: 200
       
        
        
