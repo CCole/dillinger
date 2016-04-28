@@ -93,15 +93,25 @@
     }, 400, function() {
       
       return  jQuery('.splashscreen').remove(),
+      
      jQuery("#editor1").resizable({
+         
+    
+       alsoResizeReverse: "#preview1, #previewHead",
+       alsoResize: "#editorHead"
+      
+       
+       
         
-        resize: function(event, ui){
-            var preview = jQuery("#preview1");
+        /*resize: function(event, ui){
+           var preview = jQuery("#preview1");
            // var pWidth = preview.width(); 
-            var diff = (ui.originalSize.width - ui.size.width);
-            console.log("original size " + ui.originalSize.width); 
+   
+           var diff = (ui.originalSize.width - ui.size.width);
+           console.log("original size " + ui.originalSize.width); 
            console.log("diff " + diff); 
            console.log("preview width " + preview.width()); 
+           
            if (diff <= 0){
              preview.width( preview.width() - Math.abs(diff) ); 
              
@@ -111,7 +121,7 @@
            }
             
         }
-         //alsoResize:'#preview1'
+         //alsoResize:'#preview1'*/
          
         
 
