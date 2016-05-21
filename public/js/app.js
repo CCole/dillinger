@@ -92,13 +92,13 @@
       opacity: 0
     }, 400, function() {
       
-      return  jQuery('.splashscreen').remove(),
+     return  jQuery('.splashscreen').remove(),
       
      jQuery("#editor1").resizable({
          
     
-       alsoResizeReverse: "#preview1, #previewHead",
-       alsoResize: "#editorHead",
+       alsoResizeReverse: "#preview1", 
+      
        maxWidth: 1300,
        minWidth: 200
       
