@@ -7,7 +7,9 @@
 
   // jQuery
   window.jQuery = require('jquery'),
-  require('jquery-ui-bundle');
+  require('jquery-ui-bundle'),
+  require('inverseresize/alsoResizeReverse/alsoResizeInverse')
+  ;
   
   debugger;
 
