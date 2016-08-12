@@ -35,7 +35,11 @@ module.exports =
 
 
 
-  resizeService.resizeEditor(editor); 
+  resizeService.resizeEditor(editor);
+  resizeService.stopBubble(); 
+  resizeService.resetPanes(); 
+  
+  
   
 
   var updateDocument = function() {
